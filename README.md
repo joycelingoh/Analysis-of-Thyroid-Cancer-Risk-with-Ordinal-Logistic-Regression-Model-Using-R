@@ -1,28 +1,28 @@
 # Analysis-of-Thyroid-Cancer-Risk-with-Ordinal-Logistic-Regression-Model-Using-R
-## Thyroid Cancer Risk Classification (Ordinal Logistic Regression in R)
+## Project Overview
 
-This project predicts thyroid cancer risk levels (low, medium, high) using ordinal logistic regression in R.  
-The dataset (212k+ records from Kaggle) contains demographic, lifestyle, and physiological factors such as:
-
-- Age, Gender, Ethnicity, Country  
-- Family History, Radiation Exposure, Iodine Deficiency  
-- Thyroid Hormone Levels (TSH, T3, T4)
-
+This project focuses on thyroid cancer risk classification using ordinal logistic regression in R. The goal is to categorize individuals into low, medium, and high risk groups based on demographic, lifestyle, and physiological factors.
+- Dataset: 212,000+ records from Kaggle, including: Age, Gender, Country, Ethnicity, Family History, Radiation Exposure, Iodine Deficiency, and Thyroid Hormone Levels (TSH, T3, T4)
+  
 ## Key Insights
-- Important Risk Factors: Family history, radiation exposure, iodine deficiency, ethnicity, and country  
+- Significant Predictors: Family history, radiation exposure, iodine deficiency, ethnicity, and country (p < 0.05)
+- Non-significant: Age, TSH, T3, T4, and other lifestyle factors
 - Model Comparison:
   - Full model (numerical + categorical)
-  - Numerical-only model
-  - Categorical-only model (**best trade-off: 51.36% accuracy**)
-- Takeaway: Categorical data alone can effectively stratify thyroid cancer risk.
+  - Numerical-only model (lowest accuracy)
+  - Categorical-only model (best trade-off: 51.36% accuracy, comparable to full model)
+- Takeaway: Categorical data alone is sufficient for effective risk stratification.
 
-## Tools Used
-- R (MASS, dplyr, ggplot2)
-- Ordinal Logistic Regression for risk classification
-- Exploratory Data Analysis for feature importance
+## Tools & Methods
+- Language: R
+- Libraries: MASS, dplyr, ggplot2
+- Methods: Data cleaning, Chi-Square & Spearman tests, Ordinal Logistic Regression, Confusion Matrix Evaluation
+
+## Results
+- Categorical-only model provides similar accuracy as full model while being simpler and more interpretable.
+- Insights can help prioritize early screening efforts in regions with limited diagnostic resources.
 
 ## Future Work
-- Improve accuracy using advanced ML models (e.g., Random Forest, XGBoost)
-- Address class imbalance for better prediction of high-risk cases
-- Add visualization dashboards for easier interpretation
-
+- Implement advanced ML models (Random Forest, XGBoost) to improve accuracy
+- Address class imbalance for better medium/high-risk predictions
+- Add interactive visualizations and dashboards for easier interpretation

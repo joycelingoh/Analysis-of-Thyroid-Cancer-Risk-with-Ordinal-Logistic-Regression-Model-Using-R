@@ -1,4 +1,4 @@
-# Analysis-of-Thyroid-Cancer-Risk-with-Ordinal-Logistic-Regression-Model-Using-R
+# Analysis of Thyroid Cancer Risk with Ordinal Logistic Regression Model Using R
 ## Project Overview
 
 This project focuses on thyroid cancer risk classification using ordinal logistic regression in R. The goal is to categorize individuals into low, medium, and high risk groups based on demographic, lifestyle, and physiological factors.
